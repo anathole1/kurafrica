@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+:root {
+    --main-color: #025a6c;
+    --second-color: #252422;
+    --third-color: #af521d;
+    --fourth-color: #d84227;
+    --fith-color: #fff;
+    --sixth-color: #ccc5b9;
+    --seventh-color: #025a6c;
+    --eigth-color:#0c4755;
+    --font-main: 'Noto Sans', sans-serif;
+    --font-1: "Dancing Script", cursive;
+}
+
+* {
+    font-family: var(--font-main);
+    /* text-align: justify; */
+}
+.font-second{
+    font-family: var(--font-1);
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-dec {
+    text-decoration: none;
+}
+
+
+
+
+/* background colors */
+
+.bg-main {
+    background-color: var(--main-color);
+}
+
+.bg-first {
+    background-color: var(--first-color);
+}
+
+.bg-second {
+    background-color: var(--second-color);
+}
+
+.bg-third {
+    background-color: var(--third-color);
+}
+
+.bg-fourth {
+    background-color: var(--fourth-color);
+}
+
+.bg-fith {
+    background-color: var(--fith-color);
+}
+
+.bg-sixth {
+    background-color: var(--sixth-color);
+}
+
+.bg-seventh {
+    background-color: var(--seventh-color);
+}
+
+body#bg-img {
+    background-image: url("images/krafrica.png");
+}
+
+
+/* text colors */
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-second {
+    color: var(--second-color);
+}
+
+.text-third {
+    color: var(--third-color);
+}
+
+.text-fourth {
+    color: var(--fourth-color);
+    text-align: center;
+}
+
+.text-fith {
+    color: var(--fith-color);
+}
+
+.text-sixth {
+    color: var(--sixth-color);
+}
+
+.div-border {
+    border: 1px solid #4f81bc;
+    padding: 5px;
+    /* box-shadow:10px 10px 5px #4f81bc; */
+}
+
+
+/* font sizes */
+
+.text-sm {
+    font-size: 20px;
+}
+
+.text-md {
+    font-size: 25px;
+}
+
+.text-lg {
+    font-size: 30px;
+}
+
+.text-xl {
+    font-size: 35px;
+}
+
+.text-xxl {
+    font-size: 40px;
+}
+
+
+/* buttons */
+
+.btn-main {
+    background-color: var(--main-color);
+    color: var(--fith-color);
+}
+
+.btn-first {
+    background-color: var(--first-color);
+}
+
+.btn-second {
+    background-color: var(--second-color);
+}
+
+.btn-third {
+    background-color: var(--third-color);
+}
+
+.btn-fourth {
+    background-color: var(--fourth-color);
+}
+
+.btn-fith {
+    background-color: var(--fith-color);
+}
+
+
+/* font families */
+
+.font-art {
+    font-family: var(--font-1);
+}
+
+
+/* border radiuses */
+
+.curved-border {
+    border-radius: 0px 0px 0px 1024px;
+    overflow: hidden;
+}
+
+.rounded-oposite {
+    border-radius: 0px 20px 0px 20px;
+    overflow: hidden;
+}
+
+.h-screen {
+    min-height: 100vh;
+}
+
+.reverse-wrapp {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.cover-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.card-head {
+    width: auto;
+    height: 40vh;
+}
+
+li.nav-item {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address i {
+    margin-bottom: 10px;
+}
+
+address a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address a:hover {
+    color: #abede8;
+}
+
+footer li a:hover {
+    color: #daf0eb;
+}
+
+
+/* navigation dropdown */
+
+.img {
+    /* width: 100%; */
+    z-index: 0;
+    /* opacity: 0.7; */
+}
+
+.text-over-img {
+    z-index: 1;
+    font-size: 1.2em;
+    /* margin-bottom: 100px; */
+    text-align: center;
+    color: #fff;
+    background-color: var(--seventh-color);
+    opacity: 1;
+}
