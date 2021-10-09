@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\menteeApplicationController;
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +41,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('/mentee_application', App\Http\Controllers\menteeApplicationController::class);
 Route::resource('/donate', App\Http\Controllers\donateController::class);
+Route::resource('/contact_us', App\Http\Controllers\ContactController::class);

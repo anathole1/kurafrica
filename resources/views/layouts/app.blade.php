@@ -70,7 +70,7 @@
                             <a class="nav-link" href="/impact">Impact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
+                            <a class="nav-link" href="/contact_us/create">Contact</a>
                         </li>
                     </ul>
 
@@ -144,7 +144,7 @@
                         <a class="list" href="/staffs">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="list" href="/contact">Contact us</a>
+                        <a class="list" href="/contact/create">Contact us</a>
                     </li>
                 </div>
                 <div class="col">
