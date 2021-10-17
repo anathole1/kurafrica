@@ -115,4 +115,12 @@
         </div>
     
    </div>
+   <script>
+    Swal.fire({
+    icon: 'info',
+    title: 'Mentee Application ',
+    text: 'Now Open',
+    footer: '<a href="https://www.kurafrica.com/mentee_application/create">Click Here to Apply</a>'
+    })
+</script>
 @endsection

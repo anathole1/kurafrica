@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\menteeApplicationController;
+use App\Http\Controllers\RegKuraController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,3 +43,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/mentee_application', App\Http\Controllers\menteeApplicationController::class);
 Route::resource('/donate', App\Http\Controllers\donateController::class);
 Route::resource('/contact_us', App\Http\Controllers\ContactController::class);
+Route::resource('/backed', App\Http\Controllers\RegKuraController::class);
