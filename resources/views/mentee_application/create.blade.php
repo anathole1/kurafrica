@@ -1,13 +1,18 @@
 @extends('layouts.app')
-
+@section('title','Kurafrica | Mentee_Application')
 @section('content')
 <div class="container-fluid">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Mentee Application Portal</li>
-        </ol>
-      </nav>
+  <div class="row mb-2">
+    <div class="col-sm-6">
+      <h1>Mentee Application Portal</h1>
+    </div>
+    <div class="col-sm-6">
+      <ol class="breadcrumb float-sm-right">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active"><a href="#">Mentee Application</a></li>
+      </ol>
+    </div>
+  </div>
 </div>
     <div class="container">
         <div class="row">
@@ -130,7 +135,9 @@
                 </div>
                 
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+              <img src="../storage/images/open.png" alt="" class="img-fluid">
+            </div>
         </div>
     </div>
 @endsection

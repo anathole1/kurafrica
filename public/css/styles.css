@@ -96,6 +96,9 @@ body#bg-img {
 .text-sixth {
     color: var(--sixth-color);
 }
+.text-eigth{
+    color: var(--eigth-color);
+}
 
 .div-border {
     border: 1px solid #4f81bc;
@@ -238,3 +241,11 @@ footer li a:hover {
     background-color: var(--seventh-color);
     opacity: 1;
 }
+.inner-img {
+    transition: 0.3s;
+  }
+  
+  .inner-img:hover {
+    transform: scale(1.3);
+    cursor:pointer;
+  }

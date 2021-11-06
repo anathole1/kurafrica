@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,6 +21,7 @@
   
         {{-- <script src="{{ asset('js/scripts.js') }}" ></script> --}}
     <!-- Styles -->
+    <link rel="icon" href="{{asset('images/krafrica.png')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -36,7 +37,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-main text-second shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="storage/images/krafrica.png" alt="KURAFRICA"  width="100" height="50">
+                    <img src="{{asset('images/krafrica.png')}}" alt="KURAFRICA"  width="100" height="50">
                    
                     {{-- {{ config('app.name', 'Laravel') }} --}}
                 </a>

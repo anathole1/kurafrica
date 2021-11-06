@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Kurafrica | Staff')
 @section('content')
   <div class="container-fluid">
     <nav aria-label="breadcrumb">

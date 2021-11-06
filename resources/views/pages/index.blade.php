@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Kurafrica | Home')
 @section('content')
      <!-- header section -->
      <div class="container-fluid">
@@ -7,11 +7,11 @@
              <div class="reverse-wrapp">
                 <div class="col-sm-4">
                     <h1 class="font-weight-bold text-fourth">KURAFRICA</h1>
-                    <p class="text-sm py-4">KURAFRICA is a social enterprise that provides professional coaching and mentorship to ensure a bright future and well being of our communities through identifying, guiding  and supporting the unnoticed talents and dreams of children and adolescents.
+                    <p class="text-sm py-4 font-second">KURAFRICA is a social enterprise that provides professional coaching and mentorship to ensure a bright future and well being of our communities through identifying, guiding  and supporting the unnoticed talents and dreams of children and adolescents.
                     </p>
                     <h1 class="text-first">" Every child is special! "  
                        </h1>
-                       <P> Through your support, their personal power discovery is guaranteed. 
+                       <P class="font-second"> Through your support, their personal power discovery is guaranteed. 
                     </P>
                     <div class=" bg-seventh  rounded-oposite">
 
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="col-sm-8 curved-border">
-                    <img src="/storage/images/e-library.jpg" class="cover-image" alt="home" title="home">
+                    <img src="/storage/images/lendingbook.jpeg" class="cover-image" alt="home" title="Mentoring is a brain to pick, an ear to listen, and a push in the right direction">
                 </div>
             </div>
          </div>
@@ -62,7 +62,7 @@
                             <img src="/storage/images/mentoring.jpg" alt="MTHY" class="img-thumbnail" >
                         </div>
                         <div class="col-sm-10">
-                            <p>We are full of empathy, great listeners, advisors with effective communication which is why children who have passed through our mentorship program become smart, tremendous and wise decision makers</p>
+                            <p class="font-second">We are full of empathy, great listeners, advisors with effective communication which is why children who have passed through our mentorship program become smart, tremendous and wise decision makers</p>
                         </div>     
                     </div>
                 </div>
@@ -113,14 +113,30 @@
             </div>
             
         </div>
-    
+        <h1 class="text-center font-weight-bold text-fourth">TESTIMONIAL</h1>
+    <div class="row">
+        <div class="col-1">
+            <img src="../storage/images/open.png" class="rounded" alt="like it" width="70" height="70">
+        </div>
+        <div class="col-11">
+            no content yet
+        </div>
+    </div>
    </div>
    <script>
-    Swal.fire({
+      Swal.fire({
     icon: 'info',
     title: 'Mentee Application ',
-    text: 'Now Open',
-    footer: '<a href="https://www.kurafrica.com/mentee_application/create">Click Here to Apply</a>'
-    })
+    
+    button: 'cancel',
+    html:
+    'Build the brighten future of your Children. <br>'+
+    'Click Here to ' +
+    '<a href="https://www.kurafrica.com/mentee_application/create"><b>Apply</b></a> ',
+    showCancelButton: true,
+    showConfirmButton: false,
+    cancelButtonColor: '#d33',
+})
+   
 </script>
 @endsection

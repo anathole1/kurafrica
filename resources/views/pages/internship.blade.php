@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','Internship')
 @section('content')
 <div class="container-fluid">
     <nav aria-label="breadcrumb">
