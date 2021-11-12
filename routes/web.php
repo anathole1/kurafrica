@@ -31,7 +31,7 @@ Route::get('/hoc', [PagesController::class, 'hoc']);
 Route::get('/internship', [PagesController::class, 'internship']);
 Route::get('/lendbook', [PagesController::class, 'lendbook']);
 Route::get('/schorlaship', [PagesController::class, 'schorlaship']);
-
+Route::post('/successPay', [PagesController::class, 'successPay']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -44,3 +44,5 @@ Route::resource('/mentee_application', App\Http\Controllers\menteeApplicationCon
 Route::resource('/donate', App\Http\Controllers\donateController::class);
 Route::resource('/contact_us', App\Http\Controllers\ContactController::class);
 Route::resource('/backed', App\Http\Controllers\RegKuraController::class);
+
+

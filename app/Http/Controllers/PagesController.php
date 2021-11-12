@@ -45,4 +45,7 @@ class PagesController extends Controller
     public function elibrary(){
         return view('pages.elibrary');
     }
+    public function successPay(){
+        return view('pages.success_Payment');
+    }
 }
