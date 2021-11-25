@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Payment;
+use App\Models\Book;
 class PagesController extends Controller
 {
 
@@ -43,9 +44,25 @@ class PagesController extends Controller
         return view('pages.lendbook');
     }
     public function elibrary(){
-        return view('pages.elibrary');
+        $books = Book::all();
+        // return view('books.index')->with('books',$books);
+        return view('pages.elibrary')->with('books',$books);
     }
-    public function successPay(){
-        return view('pages.success_Payment');
+    public function successPay(Request $request){
+        $this->validate($request,[
+            'tel' => 'required',
+            'level' => 'required'
+        ]);
+        
+        $spay = new Payment;
+        $spay->userId = $request->input('userId');
+        $spay->level = $request->input('level');
+        $spay->amount = $request->input('amount');
+        $spay->tel = $request->input('tel');
+        $spay->expiration = $request->input('exp');
+        $spay->save();
+        return redirect('/home')->with('success', 'Payment made successfully.');
+        //return view('pages.success_Payment');
+
     }
 }

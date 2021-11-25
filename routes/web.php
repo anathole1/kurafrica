@@ -44,5 +44,6 @@ Route::resource('/mentee_application', App\Http\Controllers\menteeApplicationCon
 Route::resource('/donate', App\Http\Controllers\donateController::class);
 Route::resource('/contact_us', App\Http\Controllers\ContactController::class);
 Route::resource('/backed', App\Http\Controllers\RegKuraController::class);
+Route::resource('/books', App\Http\Controllers\BookController::class);
 
 
